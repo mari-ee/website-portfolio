@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Happy+Monkey&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gabriela&family=Gelasio:ital,wght@0,400..700;1,400..700&display=swap');
+* {
+    margin: 0;
+}
+
+
+.menu-bar{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        height: 110px;
+        padding-left: 0;
+        background-color: #C8CEEE;
+    }
+.menu-buttons{
+    border-width: 0;
+    justify-content: center;
+    margin: 12px;
+    align-content: center;
+    background-color: transparent;
+    font-family: "Happy Monkey", system-ui;
+    font-size: 20px;
+    color: #7071E7;
+}
+.all-nav-buttons{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 10px;
+    margin-inline: 4px;
+    margin: auto;
+
+}
+.about{
+    display: flex;
+    flex-direction: row;
+    height: 750px;
+    background-color: #E3F2FF;
+}
+.prof-pic{
+    display: flex;
+    flex-direction: column;
+    height: 80%;
+    width: 80%;
+    object-fit: contain;
+    padding: 70px;
+}
+.about-header{
+    display: flex;
+    flex-direction: row;
+    font-family: 'Gelasio', cursive;
+    padding-top: 160px;
+    padding-left: 100px;
+    color: cornflowerblue;
+    padding-bottom: 50px;
+    font-size: 60px;
+}
+.about-passage{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Gabriela', cursive;
+    padding-left: 100px;
+    color: #70A6E7;
+    width: 665px;
+    font-size: 30px;
+}
