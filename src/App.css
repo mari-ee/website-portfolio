@@ -1,17 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Happy+Monkey&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Gabriela&family=Gelasio:ital,wght@0,400..700;1,400..700&display=swap');
+@import "tailwindcss";
 * {
     margin: 0;
+    /*box-sizing: border-box;*/
 }
-
 
 .menu-bar{
         display: flex;
+    position: sticky;
+    top: 0;
         flex-direction: row;
         align-items: center;
         height: 110px;
         padding-left: 0;
-        background-color: #C8CEEE;
+        background-color: rgba(204, 204, 251, 0.7);
     }
 .menu-buttons{
     border-width: 0;
@@ -22,6 +25,11 @@
     font-family: "Happy Monkey", system-ui;
     font-size: 20px;
     color: #7071E7;
+    display: flex;
+    align-items: center;
+}
+.menu-buttons:hover{
+    color: rgba(123, 104, 238, 0.55);
 }
 .all-nav-buttons{
     display: flex;
@@ -31,38 +39,97 @@
     gap: 10px;
     margin-inline: 4px;
     margin: auto;
-
+    overflow: auto;
 }
+
+
 .about{
+    background-color: #E3F2FF;
+    align-items: flex-start;
     display: flex;
     flex-direction: row;
-    height: 750px;
-    background-color: #E3F2FF;
+    flex-wrap: wrap;
 }
+
 .prof-pic{
-    display: flex;
-    flex-direction: column;
-    height: 80%;
-    width: 80%;
+    height: 20cm;
+    width: 18cm;
     object-fit: contain;
     padding: 70px;
 }
-.about-header{
-    display: flex;
-    flex-direction: row;
-    font-family: 'Gelasio', cursive;
-    padding-top: 160px;
-    padding-left: 100px;
-    color: cornflowerblue;
-    padding-bottom: 50px;
-    font-size: 60px;
-}
+/*.main-header{*/
+/*    padding-top: 15%;*/
+/*    display: flex;*/
+/*    flex-direction: row;*/
+/*    font-family: 'Gelasio', cursive;*/
+/*    padding-left: 100px;*/
+/*    color: cornflowerblue;*/
+/*    padding-bottom: 30px;*/
+/*    font-size: 5vw;*/
+/*}*/
 .about-passage{
     display: flex;
     flex-direction: column;
     font-family: 'Gabriela', cursive;
     padding-left: 100px;
     color: #70A6E7;
-    width: 665px;
-    font-size: 30px;
+    max-width: 665px;
+    font-size: 25px;
 }
+.edu{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    background-color: #f1e3ff;
+
+}
+.main-header{
+    padding-top: 13%;
+    display: flex;
+    flex-direction: row;
+    font-family: 'Gelasio', cursive;
+    padding-left: 100px;
+    color: cornflowerblue;
+    padding-bottom: 20px;
+    font-size: 60px;
+}
+.edu-content{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    place-items: center;
+    gap: 10px;
+
+}
+.edu-box{
+    grid-column: 1/-1;
+    display: flex;
+    flex-direction: column;
+    margin: 50px;
+    padding: 20px;
+    border-radius: 10px;
+    width: 350px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+    height: 300px;
+    color: #70A6E7;
+    border: 2px solid #7064E7;
+    font-family: 'Gabriela', cursive;
+    font-size: 20px;
+
+}
+.edu-1-sch-line{
+    padding: 5px;
+    color: #7064E7;
+}
+.edu-1-sch-name{
+    padding-top: 5px;
+    font-weight: 500;
+    color: #7089E7;
+    flex-wrap: wrap;
+    font-size: 22px;
+
+}
+
+
+

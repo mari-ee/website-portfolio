@@ -30,22 +30,39 @@ const MenuButton = ({name, loc}) => {
 const About = () => {
     return (
         <div className={"about"}>
-            <div >
-                <h3 className={"about-header"}>ABOUT ME</h3>
-                <p className={"about-passage"}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                    exercitation
-                    ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+            <div>
+            <h3 className={"main-header"}>ABOUT ME</h3>
+            <p className={"about-passage"}>Hello there! My name is Mariah Makeda Ogunlana, a Biomedical Science student minoring in Computer Science. I enjoy learning how to build applications, working with data, and solving problems through code. I’m especially interested in how technology can be used to create meaningful real-world impact. I am a huge Stray Kids lover (STAY here!!) and in my free time, I like to read, watch Chinese dramas, and listen to music.
+                <b>Fun fact:</b> If you ever meet me, I’m probably listening to something :) </p>
             </div>
-            <img className={"prof-pic"} src={profPic} alt="professional-picture" />
+            <img className={"prof-pic"} src={profPic} alt="professional-picture"/>
         </div>
     )
 }
 const Education = () => {
-    return <h1 className={"edu"}>Education</h1>;
+    return (
+    <div className={"edu"}>
+        <div className={"main-header"}>EDUCATION</div>
+        <div className={"edu-content"}>
+            <div className={"edu-box"}>
+                <h4 className={"edu-1-sch-name"}>University of Texas at Dallas</h4>
+                <p className={"edu-1-sch-degree"}>Bachlor of Science</p>
+                <hr className={"edu-1-sch-line"}/>
+                <p className={"edu-1-sch-major"}>Biomedical Science</p>
+                <p className={"edu-1-sch-minor"}>Computer Science</p>
+
+            </div>
+
+            <div className={"edu-box"}>
+                <h4>Collin College<br/></h4>
+                <p>Associate of Science</p>
+            </div>
+        </div>
+    </div>
+    )
 }
 const Skills = () => {
-    return <h1 className={"skills"}>Skills</h1>;
+    return <h3 className={"skills"}>Skills</h3>;
 }
 const Projects = () => {
     return <h1 className={"proj"}>Projects</h1>;
