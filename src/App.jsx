@@ -1,6 +1,7 @@
 import logo from './assets/logo.png'
-import profPic from './assets/professional-photo.png'
+import profPic from './assets/professional-photo_1.jpg'
 import './App.css'
+import resume from './assets/makeda_resume.pdf'
 import {useState} from "react";
 
 
@@ -82,10 +83,11 @@ const spoken_lang = [
     {label:"French", icon: "https://flagcdn.com/w80/fr.png", level:1},
 ]
 const frameworks_tools = [
-    {label:"Pandas", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/pandas/pandas-original.svg"},
+    {label:"Postman", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postman/postman-original.svg"},
     {label:"React", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg"},
     {label:"SpringBoot", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/spring/spring-original.svg"},
     {label:"VS Code", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vscode/vscode-original.svg"},
+    {label:"RabbitMQ", icon:"https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/rabbitmq/rabbitmq-original.svg"},
     {label:"IntelliJ", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/intellij/intellij-original.svg"},
     {label:"Git", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg"},
     {label:"Github", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg"},
@@ -299,9 +301,14 @@ const Projects = () => {
 }
 const Contact = () => {
     return <div className={"contact"}>
-        <div className={"header"}>CONTACT ME</div>
-
+        <div className={"contact-content"}>
+            {/*   <div className={'resume'}>
+            <h3>Here is my complete resume: </h3>
+            <a className={'res-button'} href={resume} target="_blank" rel="noopener noreferrer">
+                View My Resume
+            </a>*/}</div>
     </div>
+
 }
 
 const App = () => {

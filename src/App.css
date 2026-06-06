@@ -66,7 +66,7 @@
     object-fit: cover;
 }
 .header{
-    padding: 2% 2% 1% 6%;
+    padding: 2% 2% 1% 4%;
     display: block;
     width: auto;
     flex-direction: row;
@@ -566,6 +566,31 @@
 /*.mbtn-primary:hover {*/
 /*    background: #534AB7;*/
 /*}*/
+.contact-content{
+    display: flex;
+    font-family: 'Gabriela', cursive;
+    flex-direction: column;
+    height: 50px;
+
+}
+.contact{
+    background: #E8639A;
+}
+.resume{
+    width: inherit;
+}
+.resume h3{
+
+    font-size: 1.5em;
+    display: inline;
+}
+.res-button{
+    font-size: 1.2em;
+    padding: 1%;
+    border: solid #26215C;
+    width: auto;
+}
+
 
 
 
