@@ -40,7 +40,7 @@
     gap: 10px;
     margin-inline: 4px;
     margin: 30px;
-    overflow: auto;
+    overflow-y: hidden;
 }
 
 
@@ -54,6 +54,7 @@
 
 .about-content{
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     padding:1% 2% 1% 4%;
 }
@@ -61,6 +62,7 @@
     border-radius: 50%;
     border: 3px solid white;
     width: 25%;
+    min-width: 285px;
     aspect-ratio: 1/1;
     height: 35%;
     object-fit: cover;
@@ -105,7 +107,7 @@
     font-family: 'Gabriela', cursive;
     padding: 3% 2% 4% 4%;
     color: #2C3E6B;
-    font-size: 23px;
+    font-size: 1.3em;
     align-items: center;
 }
 .edu{
@@ -199,7 +201,7 @@
 .skills-content {
     padding: 0 2% 3% 4%;
     backdrop-filter: blur(12px);
-    font-size: 18px;
+    font-size: 1em;
     width: 100%;
 }
 .skills-bar{
@@ -225,7 +227,7 @@
     color: #1E3A8A;
     border: 1.5px solid #1E3A8A;
     border-radius: 8px;
-    margin: 0 2% 1% 2%;
+    margin: 0 2% 2% 2%;
     padding: 5px;
     align-items: center;
     justify-content: space-evenly;
@@ -310,8 +312,8 @@
 .tag-pink { background: #F4C0D1; color: #72243E; }
 .tag-pink:hover { background: #D4537E; }
 
-.tag-peach { background: #FFE8D8; color: #7A3A1A; }
-.tag-peach:hover { background: #F5C8A8; }
+.tag-mint { background: #C0EAE0; color: #1A4A3A; }
+.tag-mint:hover { background: #8DD4C0; }
 
 .card-title {
     font-size: 12px;
@@ -567,6 +569,7 @@
 /*    background: #534AB7;*/
 /*}*/
 .contact-content{
+    align-items: center;
     display: flex;
     font-family: 'Gabriela', cursive;
     flex-direction: column;
@@ -574,22 +577,34 @@
 
 }
 .contact{
+    height: 50px;
     background: #E8639A;
 }
-.resume{
-    width: inherit;
-}
-.resume h3{
 
-    font-size: 1.5em;
-    display: inline;
+.socials-row{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    padding: 1.4% 0 0 0;
+
 }
-.res-button{
-    font-size: 1.2em;
-    padding: 1%;
-    border: solid #26215C;
-    width: auto;
+.social-icons{
+    width: 20px;
 }
+/*.resume{*/
+/*    width: inherit;*/
+/*}*/
+/*.resume h3{*/
+
+/*    font-size: 1.5em;*/
+/*    display: inline;*/
+/*}*/
+/*.res-button{*/
+/*    font-size: 1.2em;*/
+/*    padding: 1%;*/
+/*    border: solid #26215C;*/
+/*    width: auto;*/
+/*}*/
 
 
 

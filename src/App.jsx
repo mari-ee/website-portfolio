@@ -5,6 +5,11 @@ import resume from './assets/makeda_resume.pdf'
 import {useState} from "react";
 
 
+const Hero = () => {
+    return (
+        <h1>Hello Everyone!1</h1>
+    )
+}
 const MenuBar = () => {
   return (
       <div className={"menu-bar"}>
@@ -14,7 +19,6 @@ const MenuBar = () => {
           <MenuButton name={"EDUCATION"} loc={"edu"}/>
           <MenuButton name={"SKILLS"} loc={"skills"} />
           <MenuButton name={"PROJECTS"} loc={"proj"}/>
-          <MenuButton name={"CONTACT"} loc={"cont"}/>
           </nav>
       </div>
   )
@@ -129,12 +133,13 @@ const Skills = () => {
 const projects = [
     {
         tag: "DSA",
-        tagClass: "tag-peach",
-        iconBg: "#C0D9F4",
-        iconColor: "#3C3489",
+        tagClass: "tag-mint",
+        iconBg: "#C0EAE0",
+        iconColor: "#1A4A3A",
         icon: "ti ti-world-www",
         path: "C:\\EMILIA\\browser-nav",
         title: "Browser Navigation System",
+        description: "A Java-based simulation of browser back/forward navigation, built with classic data structures like linked lists, stacks, and queues.",
         lang: "Java",
         bullets: [
             "Built a browser navigation simulator using OOP with a doubly linked list, stack, queue, and dynamic array to manage user navigation data.",
@@ -152,6 +157,7 @@ const projects = [
         icon: "ti-dna-2",
         path: "C:\\EMILIA\\codon-analysis",
         title: "COVID-19 Codon Bias Analysis",
+        description: "A bioinformatics tool that analyzes how the COVID-19 genome uses codons across all 20 amino acids, generating reports from raw genomic data.",
         lang: "Java",
         bullets: [
             "Built a bioinformatics program analyzing codon usage bias across the COVID-19 genome, computing per-codon frequency for all 20 amino acids.",
@@ -169,6 +175,7 @@ const projects = [
         icon: "ti-chef-hat",
         path: "C:\\EMILIA\\fork-yeah",
         title: "Fork Yeah",
+        description: "An AI-powered mobile cooking companion that gives real-time recipe guidance and dish feedback through photo-based input.",
         lang: "React Native · Expo · TypeScript · Gemini 2.0",
         bullets: [
             "Built a mobile AI-assisted cooking application that provides real-time recipe guidance and food evaluation through image-based input.",
@@ -186,6 +193,7 @@ const projects = [
         icon: "ti ti-music",
         path: "C:\\EMILIA\\moodmatch",
         title: "MoodMatch (In progress..)",
+        description: "A full-stack music recommender that matches your current mood to curated song suggestions via a Spring Boot backend and React frontend.",
         lang: "React · Spring Boot · REST API",
         bullets: [
             "Developed a full-stack music recommendation system that maps user mood input to curated song suggestions through a RESTful API.",
@@ -202,7 +210,7 @@ function ProjectCard({ project, onClick }) {
             <div className="card-body">
                 <span className={`card-tag ${project.tagClass}`}>{project.tag}</span>
                 <div className="card-title">{project.title}</div>
-                <div className="card-preview">{project.bullets[0].substring(0, 100)}...</div>
+                <div className="card-preview">{project.description}</div>
             </div>
             <div className="card-footer">
                 <div className="card-chips">
@@ -299,14 +307,28 @@ const Projects = () => {
         </section>
     );
 }
+
+const socials = [
+    { label: "GitHub", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg", url: "https://github.com/mari-ee" },
+    {label: "Instagram", icon: "src/assets/instagram_logo.png", url: "https://www.instagram.com/ma.ri.ah.m/" },
+    {label: "Email", icon: "src/assets/mail.png", url: "mailto:mariahogunlana@gmail.com" }
+]
 const Contact = () => {
     return <div className={"contact"}>
         <div className={"contact-content"}>
             {/*   <div className={'resume'}>
-            <h3>Here is my complete resume: </h3>
+            <h3>View my resume: </h3>
             <a className={'res-button'} href={resume} target="_blank" rel="noopener noreferrer">
                 View My Resume
-            </a>*/}</div>
+            </a>*/}
+            <div className={"socials-row"}>
+                {socials.map((s) => (
+                    <a key={s.label} href={s.url} target="_blank" rel="noopener noreferrer" className={"social-link"}>
+                        <img className={"social-icons"} src={s.icon} alt={s.label} />
+                    </a>
+                ))}
+            </div>
+        </div>
     </div>
 
 }
@@ -315,6 +337,7 @@ const App = () => {
   return (
       <>
           <MenuBar/>
+          <Hero/>
           <About/>
           <Education/>
           <Skills/>
