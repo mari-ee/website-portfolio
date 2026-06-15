@@ -5,7 +5,7 @@ const Education = () => {
         <div className="edu">
             <div className="header">EDUCATION</div>
             <div className="edu-content">
-                <div className="edu-box-1">
+                <div className="edu-box edu-box-1">
                     <h4 className="edu-sch-name">University of Texas at Dallas (B.Sc)</h4>
                     <p className="edu-sch-years">Sept. 2025 - Present</p>
                     <hr className="edu-dividing-line" />
@@ -17,7 +17,7 @@ const Education = () => {
                     </p>
                 </div>
 
-                <div className="edu-box-2">
+                <div className="edu-box edu-box-2">
                     <h4 className="edu-sch-name">Collin County Community College</h4>
                     <p className="edu-sch-years">Jan. 2024 - May 2025</p>
                     <hr className="edu-dividing-line" />

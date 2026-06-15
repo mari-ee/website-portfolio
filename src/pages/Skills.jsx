@@ -11,7 +11,7 @@ const programming_lang = [
 
 const spoken_lang = [
     { label: "English",          icon: "https://flagcdn.com/w80/us.png", level: 5 },
-    { label: "Mandarian Chinese", icon: "https://flagcdn.com/w80/cn.png", level: 3 },
+    { label: "Mandarin Chinese", icon: "https://flagcdn.com/w80/cn.png", level: 3 },
     { label: "French",           icon: "https://flagcdn.com/w80/fr.png", level: 1 },
 ]
 
@@ -55,11 +55,11 @@ const Skills = () => {
 
                 <div className="skills-title">Spoken Languages</div>
                 <div className="skills-bar" />
-                <div className="skills-list">
+                <div className="skills-list skills-list-spoken">
                     {spoken_lang.map(lang => (
-                        <span key={lang.label}>
+                        <span key={lang.label} className="skills-spoken-item">
                             <img className="flag-logo" src={lang.icon} alt={lang.label + " logo"} />
-                            {lang.label}
+                            <span className="skills-spoken-name">{lang.label}</span>
                         </span>
                     ))}
                 </div>
