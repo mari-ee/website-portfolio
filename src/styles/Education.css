@@ -1,0 +1,100 @@
+.edu {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    position: relative;
+    background-color: #EBF4FF;
+    padding-bottom: 2%;
+}
+
+.edu-content {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+    font-family: 'Gabriela', cursive;
+    width: 100%;
+}
+
+.edu-box-1 {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    margin: 2% 2% 4% 4%;
+    padding: 20px 24px;
+    border-radius: 10px;
+    box-shadow: -7px -5px 0 rgba(112, 113, 231, 0.60);
+    border: none;
+    background: #dbeafe;
+    color: #1e3a8a;
+    font-size: 18px;
+}
+
+.edu-box-2 {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    margin: 2% 2% 4% 4%;
+    padding: 20px 24px;
+    border-radius: 10px;
+    box-shadow: -7px -5px 0 rgba(231, 112, 170, 0.60);
+    border: none;
+    background: #fce7f3;
+    color: #831843;
+    font-size: 18px;
+}
+
+.edu-dividing-line {
+    padding: 5px;
+    width: 100%;
+    color: #1e40af;
+}
+
+.edu-sch-years {
+    font-size: 1em;
+    font-variant: all-small-caps;
+    text-align: right;
+    color: #1e40af;
+}
+
+.edu-major-title {
+    color: #1e3a8a;
+    font-weight: 800;
+    background: rgba(30, 58, 138, 0.12);
+    padding: 2px 8px;
+    border-radius: 6px;
+    border: 2px solid #1e3a8a;
+    display: inline-block;
+    transform: rotate(-2deg);
+}
+
+.edu-major-text {
+    color: #1e40af;
+}
+
+.edu-minor-title {
+    color: #831843;
+    font-weight: 800;
+    background: rgba(131, 24, 67, 0.12);
+    padding: 2px 8px;
+    border-radius: 6px;
+    border: 2px solid #831843;
+    display: inline-block;
+    transform: rotate(2deg);
+}
+
+.edu-minor-text {
+    color: #9d174d;
+}
+
+.edu-sch-name {
+    padding-top: 5px;
+    font-weight: 500;
+    color: #1e40af;
+    flex-wrap: wrap;
+    font-size: 1.3em;
+}

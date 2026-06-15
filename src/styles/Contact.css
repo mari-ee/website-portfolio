@@ -1,0 +1,23 @@
+.contact {
+    height: 50px;
+    background: #E8639A;
+}
+
+.contact-content {
+    align-items: center;
+    display: flex;
+    font-family: 'Gabriela', cursive;
+    flex-direction: column;
+    height: 50px;
+}
+
+.socials-row {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    padding: 1.4% 0 0 0;
+}
+
+.social-icons {
+    width: 20px;
+}
