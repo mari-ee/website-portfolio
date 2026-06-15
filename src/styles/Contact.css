@@ -1,23 +1,25 @@
 .contact {
-    height: 50px;
-    background: #E8639A;
-}
-
-.contact-content {
-    align-items: center;
+    background: #EDE9FE;
+    border-radius: 20px 20px 0 0;
+    padding: 16px 40px;
     display: flex;
-    font-family: 'Gabriela', cursive;
-    flex-direction: column;
-    height: 50px;
+    justify-content: center;
+    align-items: center;
 }
 
 .socials-row {
     display: flex;
     flex-direction: row;
-    gap: 5px;
-    padding: 1.4% 0 0 0;
+    gap: 10px;
 }
 
-.social-icons {
-    width: 20px;
+.social-link {
+    width: 34px;
+    height: 34px;
+    border-radius: 10px;
+    border: 1px solid #0D1B2A;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255,255,255,0.6);
 }

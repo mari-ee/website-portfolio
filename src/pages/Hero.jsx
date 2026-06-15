@@ -123,7 +123,7 @@ const Hero = () => {
                 </p>
                 <div className="hero-btns">
                     <a className="hero-btn hero-btn-filled" href={resume} target="_blank" rel="noopener noreferrer">View Resume</a>
-                    <button className="hero-btn hero-btn-ghost">Contact</button>
+                    <a className="hero-btn hero-btn-ghost" target="_blank" rel="noopener noreferrer" href="mailto:mariahogunlana@gmail.com">Contact</a>
                 </div>
             </div>
 
