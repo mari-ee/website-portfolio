@@ -8,12 +8,12 @@ const About = () => {
             <div className="about-content">
                 <img src={profPic} alt="professional-picture" className="prof-pic" />
                 <p className="about-passage">
-                    Hello there! My name is Mariah Makeda Ogunlana, a Biomedical Science student minoring in Computer Science.
+                    Hello there! My name is (Mariah) Makeda Ogunlana, a Biomedical Science student minoring in Computer Science.
                     I enjoy learning how to build applications, working with data, and solving problems through code.
-                    I'm especially interested in how technology can be used to create meaningful real-world impact.
+                    I'm especially interested in how technology can be used to create meaningful real-world impact.<br/>
                     I am a huge Stray Kids lover (STAY here!!) and in my free time, I like to read Christian fiction,
                     and learn Chinese and French.
-                    <br /> Also, if you ever meet me in public, I'm probably listening to something :)
+                    <br/> Also, if you ever meet me in public, I'm probably listening to something :)
                 </p>
             </div>
         </section>

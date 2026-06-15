@@ -5,7 +5,7 @@ import '../styles/Hero.css'
 const LINES = [
     { type: "input",  text: "$ npm run introduce-mariah" },
     { type: "blank" },
-    { type: "output", key: "Name    ", value: "Mariah Makeda Ogunlana",              color: "green"  },
+    { type: "output", key: "Name    ", value: "Mariah Makeda E. Ogunlana",              color: "green"  },
     { type: "output", key: "Role    ", value: "Biomedical Science @ UTD",            color: "blue"   },
     { type: "output", key: "Minor   ", value: "Computer Science",                    color: "blue"   },
     { type: "output", key: "Focus   ", value: "Full-Stack Dev / Bioinformatics",     color: "orange" },
@@ -112,9 +112,9 @@ const Hero = () => {
         <section className="hero-root">
             <div className="hero-left">
                 <h1 className="hero-headline">
-                    Mariah
-                    <br />
                     <span>Makeda</span>
+                    <br />
+                    Erioluwa
                     <br />
                     <span>Ogunlana</span>
                 </h1>
